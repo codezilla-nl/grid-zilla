@@ -1,0 +1,40 @@
+// Gridzilla-aware *no breakpoints*
+// 
+// Just fill in a column size and a minimum column width. Flexbox will do the rest.
+
+.gz-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+//Columns: flex-col-x
+@for $i from 1 through $grid_columns {
+    .gz-col-#{$i} { 
+        @include calcColumnWidth($i, $grid_columns);
+    }
+}
+
+//Columns: min widths
+// IMPORTANT: for nested grids, child mininum should not exceed parent minimum. OR expect overflow..
+@for $i from 1 through $mq_max/$grid_step {
+    .gz-col-min-#{$i} { 
+        min-width: $i*$grid_step;
+    }
+}
+
+//Columns: flex-col-offset-x
+@media screen and (max-width: $mq_m)  {
+    @for $i from 1 through $grid_columns {
+        .flex-col-m-offset-#{$i} { 
+            margin-left: ($i * ((100%)/$grid_columns));
+        }
+    }
+}
+@media screen and (min-width: $mq_l)  {
+    @for $i from 1 through $grid_columns {
+        .flex-col-l-offset-#{$i} { 
+            margin-left: ($i * ((100%)/$grid_columns));
+        }
+    }
+}

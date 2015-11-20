@@ -1,0 +1,13 @@
+//shared variables
+$mq_m: 650px;
+$mq_max: 1002px;
+$gutter_width: 20px;
+$grid_columns: 12;
+$legacy_columnCount: 4; //fixed column count for IE9-
+
+//grid-default variables
+$mq_s: 320px;
+$mq_l: 971px;
+
+//grid-aware variables
+$grid_step: 20px; 

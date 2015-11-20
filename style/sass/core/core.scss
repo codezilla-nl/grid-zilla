@@ -1,0 +1,57 @@
+//Grid basics
+
+//Grid system
+@mixin calcColumnWidth($numberOfColumns, $totalColumns) {
+    flex-basis: $numberOfColumns * ((100%)/$totalColumns);
+}
+
+[class*="gz-col"] {
+    box-sizing: border-box;
+    padding-left: $gutter_width/2;
+    padding-right: $gutter_width/2;
+    flex: 1 1;
+
+    //No gutter opt-in
+    .gz-grid--no--gutter & {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+//Nesting; compensate for stacking gutter
+.gz-grid:not(.gz-grid--no--gutter) {
+    margin-left: -$gutter_width/2;
+    margin-right: -$gutter_width/2;
+}
+
+// < Ie10 fallback NOTE: it's barren on purpose. Ever seen IE9 on a tablet...?
+.gtie7 {
+    .gz-grid {
+        //Clearfix
+        &:before, &:after { content: " "; display: table; }
+        &:after { clear: both; }
+        *zoom: 1;
+
+        [class*="gz-col"] {
+            float: left;
+            width: (100% / $legacy_columnCount); //Predefined width for all columns, otherwise determining gutters would be problematic
+        }
+
+        @media screen and (max-width: $mq_m)  {
+            [class*="gz-col"] {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//Vertically align your content
+/*Important: wrap your text in a <p>! (or something else that is displayblocky) */
+.gz-valign {
+    display: flex;
+    > * {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+    }
+}
