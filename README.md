@@ -9,6 +9,7 @@ A no-nonsense Flexbox grid system
 * [USING gridzilla-aware] No breakpoints. Set a minimum width on a column instead and flexbox will figure out the rest.
 
 ###Installation
+* npm install 
 * gulp build
 * include gridzilla-aware.css or gridzilla-default.css on top of your stylesheet.
 
