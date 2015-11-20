@@ -85,7 +85,7 @@ Use gz-grid--align--left, gz-grid--align--right or gz-grid--space--between (defa
 ```
 
 ####vertical align columns
-You must have been there. Designers want their content to align vertically. Think titles that are longer than one line. That was a real headache. Until flexbox came that is. Important: you need to wrap the content in at least one element (Ex. &gt;p&lt;) or the valign won't work
+You must have been there. Designers want their content to align vertically. Think titles that are longer than one line. That was a real headache. Until flexbox came that is. Important: you need to wrap the content in at least one element (Ex. &lt;p&gt;) or the valign won't work
 ```
 <div class="gz-grid gz-valign">
     <div class="gz-col-4"><p>Kittens</p></div>
