@@ -84,5 +84,5 @@ Use gz-grid--align--left, gz-grid--align--right or gz-grid--space--between (defa
 ```
 
 ###Browser Support
-It uses Flexbox. That means IE10+. But be honest, how many tablets use IE9- anyway?
+It uses Flexbox. That means IE10+. But be honest, how many mobile devices use IE9- anyway?
 
