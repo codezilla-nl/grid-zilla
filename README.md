@@ -95,5 +95,5 @@ You must have been there. Designers want their content to align vertically. Thin
 ```
 
 ###Browser Support
-It uses Flexbox. That means IE10+. But be honest, how many mobile devices use IE9- anyway?
+It uses Flexbox. That means IE10+. But be honest, how many mobile devices use IE9- anyway? Nevertheless, IE9- will have a fixed-width colum grid.
 
