@@ -1,4 +1,4 @@
-#gridzilla
+#Grid-zilla
 A no-nonsense Flexbox grid system
 
 ###Features
