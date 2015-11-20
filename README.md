@@ -84,6 +84,16 @@ Use gz-grid--align--left, gz-grid--align--right or gz-grid--space--between (defa
 </div>
 ```
 
+####vertical align columns
+You must have been there. Designers want their content to align vertically. Think titles that are longer than one line. That was a real headache. Until flexbox came that is.
+```
+<div class="gz-grid gz-valign">
+    <div class="gz-col-4"><p>Kittens</p></div>
+    <div class="gz-col-4"><p>Too many kittens... Argh fell to second line</p></div>
+    <div class="gz-col-4"><p>No more kittens</p></div>
+</div>
+```
+
 ###Browser Support
 It uses Flexbox. That means IE10+. But be honest, how many mobile devices use IE9- anyway?
 
