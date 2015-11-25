@@ -2,7 +2,7 @@
 // 
 // Just fill in a column size and a minimum column width. Flexbox will do the rest.
 
-.gz-grid {
+.gz-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

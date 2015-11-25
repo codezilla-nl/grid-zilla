@@ -12,21 +12,21 @@
     flex: 1 1;
 
     //No gutter opt-in
-    .gz-grid--no--gutter & {
+    .gz-row--no--gutter & {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
 //Nesting; compensate for stacking gutter
-.gz-grid:not(.gz-grid--no--gutter) {
+.gz-row:not(.gz-row--no--gutter) {
     margin-left: -$gutter_width/2;
     margin-right: -$gutter_width/2;
 }
 
 // < Ie10 fallback NOTE: it's barren on purpose. Ever seen IE9 on a tablet...?
 .gtie7 {
-    .gz-grid {
+    .gz-row {
         //Clearfix
         &:before, &:after { content: " "; display: table; }
         &:after { clear: both; }

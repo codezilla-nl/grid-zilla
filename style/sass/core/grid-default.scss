@@ -2,25 +2,25 @@
 // 
 // A common grid setup with breakpoints
 
-//Alignment: .gz-grid--space--between, .gz-grid--align--left, .gz-grid--align--right
-.gz-grid--space--between,
-.gz-grid {
+//Alignment: .gz-row--space--between, .gz-row--align--left, .gz-row--align--right
+.gz-row--space--between,
+.gz-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &.gz-grid--align--left {
-        justify-content: flex-start;
-        [class*="gz-col"] {
-            flex-grow: 0;
-        }
+}
+.gz-row--align--left {
+    justify-content: flex-start;
+    [class*="gz-col"] {
+        flex-grow: 0;
     }
+}
 
-    &.gz-grid--align--right {
-        justify-content: flex-end;
-        [class*="gz-col"] {
-            flex-grow: 0;
-        }
+.gz-row--align--right {
+    justify-content: flex-end;
+    [class*="gz-col"] {
+        flex-grow: 0;
     }
 }
 
