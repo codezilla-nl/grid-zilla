@@ -58,7 +58,7 @@
 .gz-col-m-2,
 .gz-col-m-3,
 .gz-col-m-4,
-.gz-col-m-s-1 { 
+.gz-col-s-1 { 
     @include calcColumnWidth(4, 12); 
 }
 
