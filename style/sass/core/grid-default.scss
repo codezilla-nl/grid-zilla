@@ -25,41 +25,43 @@
 }
 
 //Columns: small (Mobile) - default
-.gz-col-12,
-.gz-col-m-12,
-.gz-col-s-3 {
-    @include calcColumnWidth(12, 12); 
-}
-.gz-col-8,
-.gz-col-9,
-.gz-col-10
-.gz-col-11,
-.gz-col-m-8,
-.gz-col-m-9,
-.gz-col-m-10
-.gz-col-m-11,
-.gz-col-s-2 {
-    @include calcColumnWidth(8, 12); 
-}
-.gz-col-5,
-.gz-col-6,
-.gz-col-7,
-.gz-col-m-5,
-.gz-col-m-6,
-.gz-col-m-7,
-.gz-col-s-half {
-    @include calcColumnWidth(6, 12); 
-}
-.gz-col-1,
-.gz-col-2,
-.gz-col-3,
-.gz-col-4,
-.gz-col-m-1,
-.gz-col-m-2,
-.gz-col-m-3,
-.gz-col-m-4,
-.gz-col-s-1 { 
-    @include calcColumnWidth(4, 12); 
+@media screen and (max-width: $mq_m)  {
+    .gz-col-12,
+    .gz-col-m-12,
+    .gz-col-s-3 {
+        @include calcColumnWidth(12, 12); 
+    }
+    .gz-col-8,
+    .gz-col-9,
+    .gz-col-10
+    .gz-col-11,
+    .gz-col-m-8,
+    .gz-col-m-9,
+    .gz-col-m-10
+    .gz-col-m-11,
+    .gz-col-s-2 {
+        @include calcColumnWidth(8, 12); 
+    }
+    .gz-col-5,
+    .gz-col-6,
+    .gz-col-7,
+    .gz-col-m-5,
+    .gz-col-m-6,
+    .gz-col-m-7,
+    .gz-col-s-half {
+        @include calcColumnWidth(6, 12); 
+    }
+    .gz-col-1,
+    .gz-col-2,
+    .gz-col-3,
+    .gz-col-4,
+    .gz-col-m-1,
+    .gz-col-m-2,
+    .gz-col-m-3,
+    .gz-col-m-4,
+    .gz-col-s-1 { 
+        @include calcColumnWidth(4, 12); 
+    }
 }
 
 //Columns: medium (Tablet)
